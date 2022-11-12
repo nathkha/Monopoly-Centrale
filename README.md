@@ -22,4 +22,21 @@ buy_house(player,case) -> Permits to a player to build houses on  a property if 
 
 mortgage(player) -> When a player runs out of money, to get money back, they can put a mortgage on their properties. This function only triggers when players can't pay another player.
 
+Class Case:
+This class is divided into several subclasses 
+In general, the class case have several parameters: name,index,info.
+We decide to create subclasses because all the classes don't have the same purpose, parameters. 
+In Street, we added the rent, number of houses, number of hotels, the color and owner.
+In Chance, we can keep the same parameters than Class.
+
+Class Cards: 
+The cards correspond to the Chance and Community chest card, each of them are stored in a list. 
+The method recognize(card,player), recognize which type of card it is then the action (receive, go or pay) and the amount or the location the player due or have to go. 
+
+To pick a card, we created the function pick_a_random_card. To copy the randomness of the real game, we pick our card randomly through a list.
+
+
+
+
+
 
